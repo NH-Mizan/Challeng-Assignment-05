@@ -5,50 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>assignment-05</title>
+  <link rel="shortcut icon" href="images/residential.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
 
 </head>
 
-<body>
+<body >
 
-  <!-- navber section start -->
-  <header class="">
-    <section class="bg-slate-100">
+  <!---------------------
+  navber section start
+  ------------------- -->
+  <header class=" bg-slate-50	 border-b-2 w-full z-[1] mb-16 sticky top-0 ">
+    <section class="bg-slate-200 bg-opacity-30 ">
       <div class=" max-w-screen-xl mx-auto pb-6 lg:px-15 ">
         <div class="navbar flex justify-between">
           <div class="flex-none">
-            <button id="blog-section-btn" class="btn bg-lime-300 px-8 font-bold text-lg">
+            <button id="blog-section-btn" class="btn bg-lime-300 lg:px-8 lg:font-bold lg:text-lg text-sm">
               Blog
             </button>
           </div>
-          <div class="">
+          <div class="ml-3">
             <img src="images/logo.png" alt="" class="w-8">
-            <a class=" ml-2 font-bold text-lg"> Donate Bangladesh</a>
+            <a class=" lg:ml-2 font-bold text-sm lg:text-lg"> Donate Bangladesh</a>
           </div>
           <div>
 
             <img src="images/coin.png" alt="" class="w-6">
-            <span id="main-balance" class=" text-lg font-bold ml-2">505500</span>
-            <h2 class="font-bold ml-2">BDT</h2>
+            <span id="main-balance" class=" lg:text-lg font-bold ml-2">50500</span>
+            <h2 class="font-bold lg:ml-2 ">BDT</h2>
 
           </div>
         </div>
       </div>
     </section>
-    <section class=" max-w-screen-xl mx-auto pb-6 lg:px-15 text-center mt-8">
+    <section class=" max-w-screen-xl mx-auto pb-6 lg:px-15 text-center mt-2 lg:mt-8">
       <button id="donation-btn" class="btn bg-lime-300 px-8 mr-2">Donation</button>
       <button id="history-btn" class="btn px-8">History</button>
 
     </section>
 
   </header>
-  <!-- navber section end -->
-  <!-- popup section -->
-  <div class="hidden absulate  max-w-screen-xl mx-auto pb-6 text-center mt-8 justify-center flex mt-20">
-    <div class="card bg-base-100 w-96 shadow-xl ">
+  <!-----------------------
+   navber section end
+   --------------------- -->
+  <!-----------------------
+   popup section 
+   ----------------------->
+  <div id="popup-shows" class="hidden flex justify-center items-center  ">
+    <div class="card mx-auto  mx-w-96 shadow-xl bg-green-100	 border-2 border-green-500	fixed z-[1] p-6">
       <div class="card items-center text-center ">
-        <h2 class="card-title font-bold">Congratuation !</h2>
+        <h2 class="card-title text-2xl font-bold">Congratuation !</h2>
       </div>
       <figure class="mt-2">
         <img src="images/coin.png" alt="Shoes" />
@@ -58,19 +65,21 @@
         <p>You Have Donate for Humankind</p>
         <h2 class="font-bold">SuccessFully</h2>
         <div class="card-actions">
-          <button class="btn bg-slate-300">Close Confirmation </button>
+          <button id="popup-close-btn" class="btn bg-slate-300">Close Confirmation </button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Main section start -->
+  <!-------------------------
+   Main section start 
+   ----------------------->
   <main class="">
     <div id="donation-section" class="max-w-screen-xl mx-auto pb-6 lg:px-15">
       <!-- first section -->
       <div class="hero border-2 rounded-lg ">
         <div class="hero-content flex-col lg:flex-row">
-          <img src="images/noakhali.png" class="max-w-sm rounded-lg " />
+          <img src="images/noakhali.png" class="lg:max-w-sm rounded-lg  " />
           <div>
             <div class="flex bg-slate-100 w-32 p-3 rounded-lg text-gray-500 ">
 
@@ -98,7 +107,7 @@
       <!-- scoend section -->
       <div class="hero border-2 rounded-lg mt-12 ">
         <div class="hero-content flex-col lg:flex-row">
-          <img src="images/feni.png" class="max-w-sm rounded-lg" />
+          <img src="images/feni.png" class="lg:max-w-sm rounded-lg" />
           <div>
             <div class="flex bg-slate-100 w-32 p-3 rounded-lg text-gray-500 ">
 
@@ -126,7 +135,7 @@
       <!-- third section -->
       <div class="hero border-2 rounded-lg mt-12 ">
         <div class="hero-content flex-col lg:flex-row">
-          <img src="images/quota-protest.png" class="max-w-sm rounded-lg " />
+          <img src="images/quota-protest.png" class="lg:max-w-sm rounded-lg  " />
           <div>
             <div class="flex bg-slate-100 w-32 p-3 rounded-lg text-gray-500 ">
 
@@ -163,7 +172,9 @@
 
 
   </main>
-  <!-- Main section end -->
+  <!-----------------
+   Main section end
+   ----------------- -->
 
 
   <script src="https://cdn.tailwindcss.com"></script>
