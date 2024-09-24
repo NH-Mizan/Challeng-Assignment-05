@@ -44,9 +44,11 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
         alert('Invalid Donation Amount ');
         return;
     }
-    if (mainBalance < 0) {
-        alert('You do not enough money');
+    if (noakhaliDonate > mainBalance) {
+        alert('You do not enough money?');
+
         return;
+
     }
 
     const newDonateBalance = noakhaliDonate + donateBalance;
@@ -98,7 +100,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
         alert(' Invalid Donation Amount ');
         return;
     }
-    if (isNaN(mainBalance) || mainBalance < 0) {
+    if (feniDonate > mainBalance) {
         alert('You do not enough money?');
         return;
     }
@@ -145,11 +147,11 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
 
 
     if (isNaN(quotaDonate) || quotaDonate < 0) {
-        alert('Invalid Donation Amount ');
+        alert(' Invalid Donation Amount ');
         return;
     }
-    if (isNaN(mainBalance) || mainBalance < 0) {
-        alert(' You do not enough money');
+    if (quotaDonate > mainBalance) {
+        alert(' You do not enough money?');
         return;
     }
 
