@@ -67,7 +67,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     //  History section
 
     const historyItem = document.createElement('div');
-    historyItem.className = ' p-6 rounded-xl border-2 mb-6 ';
+    historyItem.className = ' p-6 rounded-xl border-2 mb-6 bg-lime-100 ';
     historyItem.innerHTML = `
     <h3 class=" text-md font-bold" > ${noakhaliDonate} Taka is Donate for Flood at Noakhali, Bangladesh </h3>
     <p >Date: ${new Date().toDateString()} ${new Date().toTimeString()} </p>
@@ -121,7 +121,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     // History section
 
     const historyItem = document.createElement('div');
-    historyItem.className = ' p-6 rounded-xl border-2 mb-6 ';
+    historyItem.className = ' p-6 rounded-xl border-2 mb-6 bg-green-100 ';
     historyItem.innerHTML = `
     <h3 class=" text-md font-bold" > ${feniDonate} Taka is Donated for famine-2024 at Feni, Bangladesh </h3>
     <p >Date: ${new Date().toDateString()} ${new Date().toTimeString()} </p>
@@ -170,7 +170,7 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
 
     // history section
     const historyItem = document.createElement('div');
-    historyItem.className = ' p-6 rounded-xl border-2 mb-6 ';
+    historyItem.className = ' p-6 rounded-xl border-2 mb-6 bg-red-100 ';
     historyItem.innerHTML = `
     <h3 class=" text-md font-bold" > ${quotaDonate} Taka is  Donated for Aid for Injured in the Quota Movement</h3>
     <p >Date: ${new Date().toDateString()} ${new Date().toTimeString()} </p>
