@@ -1,4 +1,4 @@
-// function used 
+// function used button active background color
 
 function addedActiveColor(id) {
     document.getElementById('history-btn').classList.remove('bg-lime-300');
@@ -26,6 +26,14 @@ document.getElementById('history-btn').addEventListener('click', function () {
 })
 
 
+// Donation SuccessFully popup funtion
+
+function popupAlart(){
+    document.getElementById('popup-shows').classList.remove('hidden');
+    document.getElementById('popup-close-btn').addEventListener('click', function () {
+        document.getElementById('popup-shows').classList.add('hidden');
+    })
+}
 
 
 // Noakhali Donation section
@@ -40,7 +48,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     // const noakhaliDonate = getInputValueById('addDonateInput');
 
 
-    if (isNaN(noakhaliDonate) || noakhaliDonate < 0) {
+    if (isNaN(noakhaliDonate) || noakhaliDonate < 0 || noakhaliDonate === 0) {
         alert('Invalid Donation Amount ');
         return;
     }
@@ -59,10 +67,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
 
     // Donation SuccessFully popup
 
-    document.getElementById('popup-shows').classList.remove('hidden');
-    document.getElementById('popup-close-btn').addEventListener('click', function () {
-        document.getElementById('popup-shows').classList.add('hidden');
-    })
+     popupAlart();
 
     //  History section
 
@@ -77,6 +82,9 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
 
     historyList.insertBefore(historyItem, historyList.lastChild);
 
+    document.getElementById('addDonateInput').value = "";
+
+    
 
 
 })
@@ -96,7 +104,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
 
 
 
-    if (isNaN(feniDonate) || feniDonate < 0 ){
+    if (isNaN(feniDonate) || feniDonate < 0 || feniDonate === 0 ){
         alert(' Invalid Donation Amount ');
         return;
     }
@@ -112,11 +120,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     document.getElementById('main-balance').innerHTML = newMainBalance;
 
     // Donation SuccessFully popup
-
-    document.getElementById('popup-shows').classList.remove('hidden');
-    document.getElementById('popup-close-btn').addEventListener('click', function () {
-        document.getElementById('popup-shows').classList.add('hidden');
-    })
+    popupAlart();
 
     // History section
 
@@ -129,6 +133,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     `;
     const historyList = document.getElementById('history-container');
     historyList.insertBefore(historyItem, historyList.lastChild);
+
+    document.getElementById('feniDonateInput').value = "";
 
 
 })
@@ -146,7 +152,7 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
     // const quotaDonate = getInputValueById('quotaDonateInput');
 
 
-    if (isNaN(quotaDonate) || quotaDonate < 0) {
+    if (isNaN(quotaDonate) || quotaDonate < 0 || quotaDonate === 0) {
         alert(' Invalid Donation Amount ');
         return;
     }
@@ -162,10 +168,7 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
 
     // Donation SuccessFully popup
 
-    document.getElementById('popup-shows').classList.remove('hidden');
-    document.getElementById('popup-close-btn').addEventListener('click', function () {
-        document.getElementById('popup-shows').classList.add('hidden');
-    })
+    popupAlart();
 
 
     // history section
@@ -179,6 +182,8 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
     const historyList = document.getElementById('history-container');
 
     historyList.insertBefore(historyItem, historyList.lastChild);
+
+    document.getElementById('quotaDonateInput').value = "";
 
 
 })
